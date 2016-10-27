@@ -1,0 +1,88 @@
+1.clone:
+Cloning a git repository means that you create a local copy of the code provided by developer. we can simply do it with a command line: git clone
+
+2.commit:
+A commit, is an individual change to a file or set of files. It's like when you save a file, except with Git, every time you save it creates a unique ID 
+
+3.Push:
+Use git push to push commits made on your local branch to a remote repository. The git push command takes two arguments:
+ A branch name, for example, master. 
+ git push <REMOTENAME> <BRANCHNAME>
+  As an example, 
+ you usually run git push origin master to push your local changes to your online repository.
+
+ References:
+ https://help.github.com/articles/pushing-to-a-remote/
+ http://readwrite.com/2013/10/02/github-for-beginners-part-2/
+ http://stackoverflow.com/questions/5143119/what-does-this-mean-clone-the-github-repository
+
+ 4.Local Repository:git is a place where local repository is stored (not the working directory!) Working directory usually is a directory where the .git directory is placed. Working directory is your code directory. Local repository is .git folder in Working directory. 
+ Remote Repository:Remote repository is bare repository on server or in the filesystem
+ References:
+ http://stackoverflow.com/questions/8855880/where-is-the-local-repository-located
+ http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/
+
+ 5.Branch in Git:
+ A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you're given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.
+ Creating a branch:
+ we need to keep your master branch clean, by clean which means without any changes, like that you can create at any time a branch from your master. Each time, that you want to commit a bug or a feature, you need to create a branch for it, which will be a copy of your master branch.
+.
+Before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
+
+ Create a new branch called <branch>. This does not check out the new branch.
+ git branch -d <branch>
+
+ branch checkout:
+ The git checkout command lets you navigate between the branches created by git branch. Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch. Think of it as a way to select which line of development you’re working on
+
+ branching strategies:
+  The most well-known branching strategy is Git Flow, which is a very comprehensive strategy. So comprehensive, in fact, it needs a whole set of scripts in order to use it properly. Git Flow is too much for all but very large and technically advanced teams that are solving problems across multiple releases at one time.
+  A branching strategy itself is a process; a document.
+  Mainline branch strategy: is the simplest yet most effective strategy for small to medium sized teams. The developers in the team constantly commit their work into a single, central branch—which is always in a deployment-ready state. In other words, the main branch for the project should only contain tested and quality work, and should never be broken.
+
+  Branch Per Feature Deployment Strategy:In this strategy, there is a branch maintained per feature. Once the team/developer is confident that the feature works properly and is tested, the feature branch is merged into an integration branch,  which is also a fork from the main branch whose sole intention is to not let broken commits be propagated to the main deployment branch.
+
+  Environment Based Branching Strategy:
+  Suppose you have a staging environment, a pre-production environment and a production environment. In this case the master branch is deployed on staging. When someone wants to deploy to pre-production they create a merge request from the master branch to the pre-production branch. And going live with code happens by merging the pre-production branch into the production branch.
+
+  Variation to the above Branching Strategy used by Git:Git uses 4 different branches and names them appropriately for its team to understand what each branch is for. In addition it follows the convention that a commit can only propagate to the next branch in the stack. Thus the branches work much like a stacked pyramid. Each of the “lower” branches contain commits that are not present in the “higher” branches
+
+  References:
+  https://www.javacodegeeks.com/2015/11/git-branching-strategies.html
+  http://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344
+  https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+
+  Creating a Merge Conflict:
+  Merge conflicts in git happen, when two branches were changed on the same line or in the same content of a file before a merge. If you just extend a file or append something
+Steps to create a Merge Conflict:
+  1.Switch back to master and create a conflict
+  git checkout master
+  2.View the Branches 
+  git hist --all
+  3.Up Next
+
+  Resolving a merge conflict from the command line:
+  Removed file conflicts occur when one person edits a file, and another person deletes that file in their branch. Git does not know if you want to keep the file with the new edits, or delete the file and forget about those edits
+  git status
+  git commit
+  git show | head
+
+  References:
+  https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/rebase#start
+  http://gitimmersion.com/lab_29.html
+  https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+  http://jonathanmh.com/how-to-create-a-git-merge-conflict/
+
+  pull, fetch, statsh?
+
+  pull in github:To create a pull request, you must have changes committed to the your new branch. Go to the repository page on github. And click on "Pull Request" button in the repo header. Pick the branch you wish to have merged using the "Head branch" dropdown.
+
+  Fetching github:Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches.
+
+  Statshing in github:stashing takes the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
+
+  References:
+  https://www.git-tower.com/blog/git-cheat-sheet/
+  https://git-scm.com/book/en/v1/Git-Tools-Stashing
+  https://help.github.com/articles/fetching-a-remote/
+  https://yangsu.github.io/pull-request-tutorial/
