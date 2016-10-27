@@ -1,1 +1,31 @@
-Create 
+1.what is a repository and why do we need to use it?
+Ans:A repository is a place where we can store the data and maintain and organize in a specific manner and the repository can be used for several purposes like we can update and retrive the information in a very organized manner with specific versions named whenever you are updated are altered
+References:
+1.https://msdn.microsoft.com/en-us/library/ff649690.aspx
+https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+
+2.what is a git? why you use it?
+Ans:Git is a version control system that is used for software development and other version control tasks, In these systems, clients don’t just check out the current version of the files and work from them – they mirror the entire version history
+
+References:
+1.http://www.makeuseof.com/tag/git-version-control-youre-developer/
+2.https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+3.What is github? Why we use it?
+Ans:Agit hub is a repository where we can store the data and it can be store where  A digital directory or storage space where you can access your project, its files, and all the versions of its files that Git saves
+References:
+1.http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/
+2.https://guides.github.com
+
+4.Difference between git and github?
+Ans:Git is a distributed peer-peer version control system."GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management functionality of Git as well as adding its own features
+References:1.http://stackoverflow.com/questions/13321556/difference-between-git-and-github
+2.https://www.codefellows.org/blog/git-and-github-what-s-the-difference/
+
+5.What is source tree? Why do we use?
+Ans:When we are working with Git in development, then we've probably seen a lot of command line. While using the command line is a simple and effective way of working, there are some much better tools out there to make working with Git easy.
+One such tool is SourceTree,
+References:
+http://sagittarius.agency/blog/5-reasons-to-use-sourcetree-for-git
+https://confluence.atlassian.com/bitbucket/set-up-sourcetree-603488472.html
