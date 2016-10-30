@@ -1,0 +1,58 @@
+1.How to create a HTML document?
+Ans.HTML:(Hyper Text Markup Language)we can create a html document by using a notepad,word document or any other text editor,The file can be saved as filename.html extension.whatever we are writing in html file should be in between <html>-----<html>.We have some structure to create a document that should be <head>,<title>,<body> and we have various styles in the body.
+Rferences
+http://w3.marietta.edu/~mcshaffd/vert/howhtml.html
+https://support.microsoft.com/en-us/kb/310521
+
+2.what is an element?
+Ans:An  element is an individual component of an HTML document or web page, HTML is compose of tree of HTML elements and other nodes,It contains htmls attributes
+References:
+http://www.w3schools.com/html/html_elements.asp
+https://www.tutorialspoint.com/html/html_elements.htm
+
+3.what is an Attribute?
+Ans:An  attribute is a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.
+References:
+https://en.wikipedia.org/wiki/HTML_attribute
+https://www.tutorialspoint.com/html/html_attributes.htm
+
+4.What is a parent Element and Child Element?
+Ans:The parentElement property returns the parent element of the specified element and the children property returns a collection of an element's child elements, as an HTMLCollection object.
+References:
+http://www.w3schools.com/jsref/prop_node_parentelement.asp
+
+5.versions of html4 and html5 ? Release dates?
+Ans:html4 version:HTML 4.0 (18 December 1997)
+ The HTML 4.0 working draft builds on the multimedia and hypertext features which debuted in the HTML 3.2
+ 1.Advanced Forms
+ 2.Frame Improvements
+ 3.Table Enhancements
+ 4.Object Support
+ html5 version:HTML 5.0(On 28 October 2014)
+ Feature for html5 are:
+ 1.Markup
+ 2.New APIs
+ 3.XHTML5 (XML-serialized HTML5)
+ 4.Error handling
+References:
+https://en.wikipedia.org/wiki/HTML5#Features
+https://www.w3.org/TR/REC-html40/appendix/changes.html
+
+6.Changes between html4 and html5?
+Ans:General Differences between HTML5 and HTML4 are:
+1.Simplified and Clear Syntax
+2.Multimedia Elements
+3.Accessing User Geographical location
+4.Client Side storage
+5.Client Server Communication
+6.JavaScript Threading Mechanism
+7.Browser Compatibility
+References:
+http://www.go4expert.com/articles/html4-vs-html5-comparison-t30141/
+https://churchm.ag/differences-between-html4-html5/
+
+7.Why do we need to use HTML?
+Ans:HTML, or Hypertext Markup Language, is used to create web pages. Site authors use HTML to format text as titles and headings, to arrange graphics on a webpage, to link to different pages within a website, and to link to different websites.
+References:www.draac.com/WhatHTMLUsedFor.html
+www.yourhtmlsource.com › Start Here
+www.htmlgoodies.com/primers/html/article.php/3478141
