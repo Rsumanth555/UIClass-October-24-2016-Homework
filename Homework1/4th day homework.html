@@ -1,0 +1,140 @@
+1.Input type Attributes in a HTML
+
+An HTML form with one input field and one text field and one submit button
+
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>
+
+The <input> tag specifies an input field where the user can enter data
+
+2.The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
+
+Ex:HTML <input> accept Attribute
+<form action="demo_form.asp">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+
+3.An HTML form with an image as a submit button. The submit button is aligned to the right:
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname"><br>
+  <input type="image" src="submit.gif" alt="Submit" align="right" width="48" height="48">
+</form>
+
+The align attribute is only used with <input type="image"> and it specifies the alignment of the image input according to surrounding elements
+
+4.An HTML form with an image that represents the submit button:
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname"><br>
+  <input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+The alt attribute provides an alternate text for the user, if he/she for some reason cannot view the image
+
+5.Autocomplete Attribute
+Ex:<form action="demo_form.asp" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+The autocomplete attribute specifies whether or not an input field should have autocomplete enabled
+
+6.autofocus Attribute
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname" autofocus><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit">
+</form>
+The autofocus attribute is a boolean attribute.
+
+When present, it specifies that an <input> element should automatically get focus when the page loads.
+
+7.checked Attribute
+Ex:<form action="demo_form.asp">
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+  <input type="submit" value="Submit">
+</form>
+
+When present, it specifies that an <input> element should be pre-selected (checked) when the page loads.
+
+The checked attribute can be used with <input type="checkbox"> and <input type="radio">.
+
+8.dirname Attribute
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname" dirname="fname.dir">
+  <input type="submit" value="Submit">
+</form>
+
+The dirname attribute enables the submission of the text direction of the input field
+
+The dirname attribute's value is always the name of the input field, followed by ".dir".
+
+9.disabled Attribute
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname" disabled><br>
+  <input type="submit" value="Submit">
+</form>
+
+When present, it specifies that the <input> element should be disabled.
+
+10.form Attribute
+Ex:<form action="demo_form.asp" id="form1">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+
+The form attribute specifies one or more forms the <input> element belongs to.
+
+11.formaction Attribute
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="demo_admin.asp" value="Submit as admin">
+</form>
+
+The formaction attribute specifies the URL of the file that will process the input control when the form is submitted.
+
+12.formenctype Attribute
+Ex:<form action="demo_post_enctype.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+The formenctype attribute specifies how the form-data should be encoded when submitting it to the server (only for forms with method="post")
+
+13.formmethod Attribute
+Ex:<form action="demo_form.asp" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST">
+</form>
+
+The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+14.formnovalidate Attribute
+Ex:<form action="demo_form.asp">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form>
+
+When present, it specifies that the <input> element should not be validated when submitted.
+
+15.formtarget Attribute
+Ex:<form action="demo_form.asp">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank" value="Submit to a new window">
+</form>
+The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
